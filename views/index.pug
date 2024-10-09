@@ -2,7 +2,25 @@ doctype html
 link(rel='stylesheet' href='css/style.css')
 
 head
-    title My First Full Stack
+    title ZA WARUDO
+    link(rel="icon", href="https://i.namu.wiki/i/rOfbpn1kbWIXzYqj67JeA8Fbds8fxrS86SxLg6jgOOhFrF9QcytWc6SqtK_NFc_0-ufM_sJTrgD_8Z6qRlAmbQ.webp")
 body
-    h1 Simple TODO APP
-    p TODO: Complete the app!
+    main
+        h1 TODO APP
+        p Add your TODO items here
+        form(action="#" method="POST")
+            label(for="todo") TODO: 
+            input(type="text" name="todo")
+            button(type="submit") Submit
+        
+        h1 Dio's List
+            ul
+                each val, index in tasks
+                    li
+                        form(action="/delete" method="POST")
+                            input(type="text" name="id" value=`${val}` hidden)
+                            p= `${index + 1}: ${val}`
+                            button(type="submit") Delete
+                else
+                    li 
+                        p Nothing much
