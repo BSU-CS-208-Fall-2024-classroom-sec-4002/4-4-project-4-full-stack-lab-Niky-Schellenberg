@@ -5,13 +5,15 @@ head
     title ZA WARUDO
     link(rel="icon", href="https://i.namu.wiki/i/rOfbpn1kbWIXzYqj67JeA8Fbds8fxrS86SxLg6jgOOhFrF9QcytWc6SqtK_NFc_0-ufM_sJTrgD_8Z6qRlAmbQ.webp")
 body
+    div.container
+        div.slidingBackground
     main
         h1 TODO APP
         p Add your TODO items here
         form(action="#" method="POST")
             label(for="todo") TODO: 
             input(type="text" name="todo")
-            button(type="submit") Submit
+            button.submit(type="submit") Submit
         
         h1 Dio's List
             ul

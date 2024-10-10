@@ -16,3 +16,4 @@ If you input the same task multiple times, then delete of the duplicate tasks, t
 https://www.sitepoint.com/a-beginners-guide-to-pug/
 https://pugjs.org/language/iteration.html
 https://www.geeksforgeeks.org/how-to-handle-form-data-in-express/
+https://css-tricks.com/books/fundamental-css-tactics/infinite-scrolling-background-image/
